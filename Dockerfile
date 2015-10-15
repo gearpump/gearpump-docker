@@ -6,7 +6,7 @@ RUN curl --location   --retry 3 --insecure https://github.com/gearpump/gearpump/
 
 EXPOSE 8090
 
-ENTRYPOINT gearpump-pack-2.11.5-0.6.1.4/bin/local & gearpump-pack-2.11.5-0.6.1.4/bin/services
+ENTRYPOINT gearpump-pack-2.11.5-0.6.1.4/bin/local -workernum 1 & gearpump-pack-2.11.5-0.6.1.4/bin/services
 
 
 
