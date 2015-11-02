@@ -6,7 +6,7 @@ Start Gearpump Cluster in foreground. If you press `CTRL+C`, the cluster will be
 ```
 # Gearpump Dashboard is served at 
 #  http://127.0.0.1:8090
-docker run -p 8090:8090 gearpump/gearpump
+docker run -t -p 8090:8090 --name gearpump gearpump/gearpump
 ```
 Note that if you want to start Gearpump in background, add `-d` after `docker run`.
 
