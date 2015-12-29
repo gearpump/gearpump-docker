@@ -6,6 +6,8 @@ RUN curl --location   --retry 3 --insecure https://github.com/gearpump/gearpump/
 
 ADD gear.conf gearpump-2.11-0.7.1/conf/gear.conf
 
+ADD log4j.properties gearpump-2.11-0.7.1/conf/log4j.properties
+
 EXPOSE 3000
 
 EXPOSE 8090
