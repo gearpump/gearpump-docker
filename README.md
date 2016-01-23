@@ -30,25 +30,5 @@ systemctl daemon-reload
 systemctl restart docker
 ```
 
-## Dock Installation for CentOS 6
-Docker requires Linux kernel >= 3.10, but CentOS 6 uses 2.x kernel. Fortunately, there is a way to install Docker on CentOS 6.
-```
-# yum install -y centos-release-xen
-# echo includepkgs=kernel kernel-firmware >> /etc/yum.repos.d/CentOS-Xen.repo
-# yum update -y kernel
-# reboot
-# wget -qO- https://get.docker.com/ | sh
-# service docker start
-```
-Note that if CentOS is running behind a firewall, you need configure `yum` and `wget` properly, before executing the steps above.
-
-### yum ###
-```
-echo proxy=http://your_proxy_host:your_proxy_port >> /etc/yum.conf
-```
-
-### wget ###
-```
-echo http_proxy=http://your_proxy_host:your_proxy_port >> /etc/wgetrc
-echo https_proxy=http://your_proxy_host:your_proxy_port >> /etc/wgetrc
-```
+## OS Requirements.
+Docker requires Linux kernel >= 3.10, for example, CentOS7.
