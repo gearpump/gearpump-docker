@@ -1,5 +1,7 @@
 #gearpump-docker
-Single node Gearpump Cluster in Docker container.
+Single node Gearpump Cluster in Docker container. T
+
+This should only be used for demo purpose. As the configuration here is not optimal. 
  
 ## Usage
 Start Gearpump Cluster, run this command. The command will first pull Gearpump docker image from remote docker registry. This can take a little while. 
