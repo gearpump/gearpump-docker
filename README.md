@@ -14,13 +14,7 @@ To kill the cluster, you can run `docker stop gearpump` or press `CTRL+C`.
 
 ## Using Docker behind Firewall
 If your working environment is behind a firewall. You need specify proxy for `docker`, otherwise `docker` is not able to pull any images from remote.
-
-For CentOS 6
-```
-echo HTTP_PROXY=http://your_proxy_host:your_proxy_port >> /etc/sysconfig/docker
-echo HTTPS_PROXY=http://your_proxy_host:your_proxy_port >> /etc/sysconfig/docker
-```
-For CentOS 7 (systemd)
+For example, for CentOS 7
 ```
 mkdir /etc/systemd/system/docker.service.d
 echo [Service] > /etc/systemd/system/docker.service.d/http-proxy.conf
